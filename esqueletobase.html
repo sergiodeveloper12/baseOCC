@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASE DE CONHECIMENTO OCC</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #1a4b8e;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        /* Estilos do Menu */
+        nav {
+            background-color: #2c6bbd;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+            position: relative;
+        }
+        
+        .menu li {
+            position: relative;
+        }
+        
+        .menu > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .menu > li:hover > a {
+            background-color: #1a4b8e;
+        }
+        
+        /* Estilo dos Submenus */
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        
+        .menu li:hover > .submenu {
+            display: block;
+        }
+        
+        .submenu li a {
+            display: block;
+            padding: 12px 15px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .submenu li a:hover {
+            background-color: #e9e9e9;
+        }
+        
+        /* Cards na página principal */
+        .cards-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h3 {
+            color: #1a4b8e;
+            margin-bottom: 15px;
+        }
+        
+        .card-content {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c6bbd;
+        }
+        
+        /* Conteúdo principal */
+        main {
+            padding: 30px 0;
+            min-height: calc(100vh - 200px);
+        }
+        
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .welcome-message h2 {
+            color: #1a4b8e;
+            margin-bottom: 10px;
+        }
+        
+        /* Estilos para páginas de PDF */
+        .pdf-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1a4b8e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #154078;
+        }
+        
+        /* Rodapé */
+        footer {
+            background-color: #1a4b8e;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+        }
+		.container img {
+		   width: 100px;
+		   height:auto;
+		   }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+						<img src ="img.jpg" alt="imagem" style="float: left; width: 100px: margn-right: 10px;>
+            <div class="logo">BASE DE CONHECIMENTOS - OCC</div>
+			                                          
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li>
+                    <a href="#">OCC</a>
+                    <ul class="submenu">
+                        <li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FALERTA%20OGG%20NOT%20RUNNIG%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC">Validação OGG</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FVALIDACAO%20DOS%20PODS%20%28RESTARTS%29%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC">Validação de PODS</a></li>
+                        <li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FTELAS%20DE%20MONITORAMENTO%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC">Telas Monitoramento</a></li>
+                        <li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FALERTA%20SMS%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC">SMS</a></li>
+                        <li><a href="api_senior.pdf">Alerta API Senior</a></li>
+                        <li><a href="pws_reset.pdf">Senha de Rede</a></li>
+                        <li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FALERTA%20SMS%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC">Alerta VSS</a></li>
+                    </ul>
+                </li>
+				   <li>
+                    <a href="#">Ferramentas</a>
+                    <ul class="submenu">
+                        <li><a href="https://zabbix.credsystem.com.br/">Zabbix</a></li>
+                        <li><a href="https://dashboards.credsystem.com.br/d/bniSQeeiz/mastercard-autorizacao?orgId=1&refresh=1m&kiosk">Graffana</a></li>
+                        <li><a href="https://ruy16322.live.dynatrace.com/ui/problems?gtf=-2h&gf=all">Dynatrace</a></li>
+                        <li><a href="https://cofre.credsystem.com.br/flow/auth/signin">Cofre -Senha Segura</a></li>
+						<li><a href="https://suporte.credsystem.com.br/qualitor/html/index.php?">Qualitor</a></li>
+						<li><a href="https://wa.me/5511989135279">Whatsapp web</a></li>
+						<li><a href="https://gestao.pontotel.com.br/"> Folha de ponto</a></li>
+                       
+                    </ul>
+                <li>
+                    <a href="#">Sustentação</a>
+                    <ul class="submenu">
+                        <li><a href="sustentacao_alerta.html">Alerta de memória</a></li>
+                        <li><a href="sustentacao_acionamento.html">Alerta de Espaço em disco baixo</a></li>
+                        <li><a href="sustentacao_criticidade.html">Servidores</a></li>
+                        <li><a href="sustentacao_submenu4.html">Backups </a></li>
+                        <li><a href="sustentacao_submenu5.html">Weblogic </a></li>
+                        <li><a href="sustentacao_submenu6.html">Nutanix</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">DBA</a>
+                    <ul class="submenu">
+                        <li><a href="dba_alerta.html">Alerta OGG </a></li>
+                        <li><a href="dba_acionamento.html">Alerta LOG Archive</a></li>
+                        <li><a href="dba_criticidade.html">Alerta Index</a></li>
+                        <li><a href="dba_submenu4.html">Alerta Index</a></li>
+                        <li><a href="dba_submenu5.html">Alerta Waits acima de 600 segundos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Autorizadores</a>
+                    <ul class="submenu">
+						<li><a href="mastercard.pdf">Autorizador Mastercard</a></li>
+						<li><a href="sofexpress.pdf">Autorizador SoftwareExpress</a></li>
+						<li><a href="redecompras.pdf">Autorizador RedeCompras</a></li>
+						<li><a href="autenticadores_alerta.html">Monitoria PIX</a></li>
+                        
+                        
+                    </ul>
+                   </li>
+				   <li>
+                    <a href="#">Qualitor</a>
+                    <ul class="submenu">
+						<li><a href="">Como funciona o Qualitor</a></li>
+						<li><a href="">Filtros</a></li>
+						<li><a href="">Incidente</a></li>
+						<li><a href="">Requisição</a></li>
+                        
+                        
+                    </ul>
+                <li>
+                    <a href="#">ControlM</a>
+                    <ul class="submenu">
+					    <li><a href="cm.pdf">Problemas no Control-M? clique aqui e veja como abrir o chamado</a></li>
+                        <li><a href="ordenar_job.pdf">Como ordenar um JOB</a></li>
+                        <li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20CONTROL%2DM%2FCARGA%20CYBER%20%2D%20TREINAMENTO&sortField=Modified&isAscending=false&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438">Carga Cyber</a></li>
+                        <li><a href="controlm_submenu5.html">Fechamento de Extrato</a></li>
+                        <li><a href="controlm_submenu6.html">Carga BI</a></li>
+                        <li><a href="controlm_submenu7.html">Transferência de Arquivos</a></li>
+                        <li><a href="controlm_submenu8.html">Como alterar o parametro de um JOB</a></li>
+                        <li><a href="wpolice.pdf">Workpolice</a></li>
+                        <li><a href="descontinuacao_jobs.pdf">Descontinuação de Jobs</a></li>
+						<li><a href="kill_job.pdf">Kill no job pelo servidor</a></li>
+						<li><a href="restore_faturas.pdf">Restore de Faturas</a></li>
+						<li><a href="kil_cm.pdf">Kill no Job pelo Control-M</a></li>
+						
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">S.O.C</a>
+                    <ul class="submenu">
+                        <li><a href="">Alerta espaço em disco no FW </a></li>
+                        <li><a href="dicionario_criticidade.html">Alerta de VPN Down</a></li>
+                        <li><a href="dicionario_submenu4.html">Report de E-mail - Regra DLP</a></li>
+                        
+                    </ul>
+                </li>
+				<li>
+				<a href="#">GMUD</a>
+                    <ul class="submenu">
+                        <li><a href="dicionario_alerta.html">GMUD Padrão Imagem</a></li>
+                        <li><a href="dicionario_acionamento.html">GMUD Padrão Imagem</a></li>
+                        <li><a href="dicionario_criticidade.html">GMUD Portal do Cartão </a></li>
+                        <li><a href="dicionario_submenu4.html">Jobs de GMUD</a></li>
+                        <li><a href="dicionario_submenu5.html">Rollback GMUD </a></li>
+                        
+                    </ul>
+					<li>
+					<a href="#">Produção</a>
+                    <ul class="submenu">
+                        <li><a href="dicionario_alerta.html">Fechamento mensal</a></li>
+                        <li><a href="espaco_SFTP.pdf"> Procedimento SFTP credsystem</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/_layouts/15/stream.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20CONTROL%2DM%2FSFTP%20CREDSYSTEM%2FSFTP%20%2D%20COMO%20UTILIZAR%20e%20CRIA%C3%87%C3%83O%20DE%20JOB%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E355c52d0%2D200d%2D47ee%2Dab1a%2D2d07c1508670&web=1">Aula, como Criar Jobs SFTP</a></li>
+                        <li><a href="dicionario_criticidade.html">SHAREPOINT</a></li>
+                        <li><a href="sizing.pdf">REPORT-SIZING</a></li>
+                        <li><a href="process_number.pdf">Connect - Process Number </a></li>
+                        <li><a href="teste_restore.pdf">TESTE DE RESTORE</a></li>
+                        <li><a href="dicionario_submenu7.html">Incluir backup de seervidor</a></li>
+                        <li><a href="corte.pdf">Apagar Arquivo de corte</a></li>
+                        <li><a href="dicionario_submenu9.html">Transferir arquivo </a></li>
+                        <li><a href="connect.pdf">Restart do CONNECT</a></li>
+						<li><a href="espaco_ftp.pdf">Validação de espaço Antigo FTP</a></li>
+						 
+                    </ul>
+					<li>
+					<a href="#">Fornecedores</a>
+                    <ul class="submenu">
+                        <li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FASCENTY%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES"> ASCENTY</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FBMC%20%2D%20CONTROL%20M%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES"> BMC CONTROL M </a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FCIRION%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">CIRION</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FCM%20%2D%20COMANDO%20LINEARES%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">CM-COMANDOS LINEARES</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FCMSW%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">CMSW</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FDIRET%C3%93RIO%20WEB%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">DIRETÓRIO WEB</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FFIRST%20TECH%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">FIRST-THECH</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FHITPHONE%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">HITPHONE</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FINVENTCLOUD%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">INVENT CLOUD</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FKONDUTO%2DEQUIFAX%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">KONDUTO-EQUIFAX</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FMASTERCARD%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">MASTERCARD</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FORACLE%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">ORACLE</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FPOPULOS%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">POPULOS</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FSOFTEXPRESS%20%2D%20FISERV%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">SOFTWARE EXPRESS-FISERV</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FTIM%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">TIM</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2F%C3%9ANICO%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">UNICO</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FVERITAS%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">VERITAS</a></li>
+						<li><a href="https://csacc.sharepoint.com/sites/OCCeSustentao/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES%2FVIVO%2Epdf&viewid=11400280%2Dd609%2D4c3c%2Db3e8%2D19542cd6c438&parent=%2Fsites%2FOCCeSustentao%2FDocumentos%20Compartilhados%2FPROCEDIMENTOS%20OCC%2FDocumenta%C3%A7%C3%A3o%20para%20Leitura%20%2D%20OCC%2FLISTA%20DE%20FORNECEDORES">VIVO</a></li>
+						
+						</ul>
+						
+					<li>
+					<a href="#">Dicionário</a>
+                    <ul class="submenu">
+                        <li><a href="dicionario_alerta.html"> O que é um JOB?</a></li>
+						<li><a href="dicionario_alerta.html"> SOC</a></li>
+                        <li><a href="dicionario_acionamento.html">O que é uma FO</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=MWYZj6SJ9js"> O que é um IP</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=YMmIRoJjICw">o que é DNS</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=D2tlmxb8lW0">O que é um DHCP</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=NKgqJuyA-mk">O que é FTP</a></li>
+                        <li><a href="dicionario_submenu7.html">Principais siglas usadas na TI</a></li>
+                        <li><a href="https://repositorio.ufu.br/bitstream/123456789/14443/4/SFOLima4DISSPRT.pdf">Tabala ASCII</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=OK2u0WEKJCg">O que é um backup</a></li>
+						
+                        <li><a href="dicionario_submenu10.html">Tipos de acesso remoto(/Ferramentas)</a></li>
+                    </ul>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <div class="welcome-message">
+                <h2>Bem-vindo ao Acervo OCC</h2>
+                <p>Aqui você encontra os principais processos do OCC de forma resumida.  </p>
+				<br>
+				                           
+            </div>
+			
+<center>			     <script src="https://cdn.logwork.com/widget/digital.js"></script>
+<a href="https://logwork.com/current-time-in-sao-paulo-brazil" class="digital-clock" data-style="flip" data-size="400" data-timezone="America/Sao_Paulo" data-language="pt">Barueri-SP,  Brasil</a></center>
+			      
+			
+			
+			 
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+            
+                <center style="margin-top: 30px;"><h3> Clique aqui e veja o escalonamento</h3>
+					         <a href='https://csacc.sharepoint.com/:x:/r/sites/OCCeSustentao/_layouts/15/Doc.aspx?sourcedoc=%7B3AE85527-1D6C-405A-8B06-9A463813D646%7D&file=FOSV365%20-%2051%20-%20Matriz%20Escalation%20-%20Atualizada.xlsx&action=default&mobileredirect=true' target="_blank">
+							 <button><nav>Link para o Escalation</button></NAV>
+							 </a>
+							 </center>
+     </div>
+		 
+    </main>
+	      
+	                 
+                                 
+    <footer>
+
+        <div class="container">
+            
+			<p>Credsystem LTDA -  &reg;  todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+   
+			</script>
+            
+        
+
+
+
+        
+		
+            
+
+
+
+
+    </script>
+</body>
+</html>
